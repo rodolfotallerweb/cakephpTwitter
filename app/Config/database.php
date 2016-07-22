@@ -56,7 +56,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => 'int757',
+		'password' => '',
 		'database' => 'twitter',
 		'prefix' => '',
 		//'encoding' => 'utf8',
