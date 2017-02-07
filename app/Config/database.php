@@ -55,7 +55,7 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
+		'login' => 'user',
 		'password' => '',
 		'database' => 'twitter',
 		'prefix' => '',

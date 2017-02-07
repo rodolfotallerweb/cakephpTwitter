@@ -61,3 +61,857 @@ Stack Trace:
 #3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest))
 #4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2016-07-22 21:05:55 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /cakephpTwitter/
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(3626): ConnectionManager::getDataSource('default')
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('twitter_setting...')
+#5 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(3031): Model->getDataSource()
+#6 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(3003): Model->_readDataSource('list', Array)
+#7 C:\Apache24\htdocs\cakephpTwitter\app\Plugin\Twitter\Model\Twitter.php(11): Model->find('list', Array)
+#8 C:\Apache24\htdocs\cakephpTwitter\app\Plugin\Twitter\Model\Twitter.php(21): Twitter->get_token_connection()
+#9 C:\Apache24\htdocs\cakephpTwitter\app\Controller\HomesController.php(13): Twitter->get('statuses/user_t...', Array)
+#10 [internal function]: HomesController->index('home')
+#11 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(HomesController), Array)
+#12 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest))
+#14 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2016-07-23 13:36:46 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1044] Access denied for user \'user\'@\'localhost\' to database \'twitter\'',
+  'enabled' => true,
+)
+Request URL: /cakephpTwitter/
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(3626): ConnectionManager::getDataSource('default')
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(3653): Model->setSource('twitter_setting...')
+#5 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(3031): Model->getDataSource()
+#6 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Model\Model.php(3003): Model->_readDataSource('list', Array)
+#7 C:\Apache24\htdocs\cakephpTwitter\app\Plugin\Twitter\Model\Twitter.php(11): Model->find('list', Array)
+#8 C:\Apache24\htdocs\cakephpTwitter\app\Plugin\Twitter\Model\Twitter.php(21): Twitter->get_token_connection()
+#9 C:\Apache24\htdocs\cakephpTwitter\app\Controller\HomesController.php(13): Twitter->get('statuses/user_t...', Array)
+#10 [internal function]: HomesController->index('home')
+#11 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(HomesController), Array)
+#12 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest))
+#14 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2016-07-23 13:47:37 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 13:47:37 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 13:51:12 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 13:51:12 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 13:52:00 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 13:52:00 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter('authorise_twitt...')
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 13:52:04 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 13:52:04 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter('authorise_twitt...')
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 13:55:37 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 13:55:37 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 13:55:45 Error: [MissingControllerException] Controller class TwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'TwitterController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 13:56:59 Error: [MissingControllerException] Controller class AuthoriseTwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'AuthoriseTwitterController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 13:57:30 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 13:57:44 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 13:57:44 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 13:58:01 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 13:58:12 Error: [MissingControllerException] Controller class AuthoriseTwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'AuthoriseTwitterController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 13:58:28 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 13:58:28 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 13:58:41 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 13:59:13 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 13:59:17 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 13:59:17 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:00:49 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:00:49 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:01:00 Error: [MissingControllerException] Controller class AuthoriseTwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'AuthoriseTwitterController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:01:07 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:01:17 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:01:17 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:07:01 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:07:01 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:09:07 Error: [MissingControllerException] Controller class TwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'TwitterController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:09:58 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:09:58 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:11:27 Error: [MissingControllerException] Controller class TwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'TwitterController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:12:25 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:12:25 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:13:25 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:13:25 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:13:26 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:13:26 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:13:39 Error: [MissingControllerException] Controller class TwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'TwitterController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter/twitter/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:14:07 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:14:07 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:15:12 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:15:12 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:15:16 Error: [MissingControllerException] Controller class TwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'TwitterController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter/twitter/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:15:25 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:15:25 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:15:33 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:15:33 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:15:46 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:15:46 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:16:46 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:16:47 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:17:56 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:17:56 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:18:00 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:18:00 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:18:06 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:18:06 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:18:35 Error: [MissingPluginException] Plugin Twitters3 could not be found.
+Exception Attributes: array (
+  'plugin' => 'Twitters3',
+)
+Request URL: /cakephpTwitter/twitters3/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Core\App.php(227): CakePlugin::path('Twitters3')
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Core\App.php(549): App::path('Controller', 'Twitters3')
+#2 [internal function]: App::load('TwittersControl...')
+#3 [internal function]: spl_autoload_call('TwittersControl...')
+#4 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(266): class_exists('TwittersControl...')
+#5 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#6 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#7 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-07-23 14:19:08 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/twitters/contrller:twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:19:17 Error: [MissingControllerException] Controller class Contrller:twittersController could not be found.
+Exception Attributes: array (
+  'class' => 'Contrller:twittersController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter/contrller:twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:19:26 Error: [MissingControllerException] Controller class Controller:twittersController could not be found.
+Exception Attributes: array (
+  'class' => 'Controller:twittersController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter/controller:twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:19:36 Error: [MissingControllerException] Controller class TwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'TwitterController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitter/controller:twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:19:42 Error: [MissingControllerException] Controller class Controller:twittersController could not be found.
+Exception Attributes: array (
+  'class' => 'Controller:twittersController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter/controller:twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:20:07 Error: [MissingControllerException] Controller class Controller:twittersController could not be found.
+Exception Attributes: array (
+  'class' => 'Controller:twittersController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter/Controller:twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:20:13 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:20:13 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:21:06 Error: [MissingControllerException] Controller class TwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'TwitterController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitter/controller:twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:22:17 Error: [MissingControllerException] Controller class TwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'TwitterController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitter/controller:twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:22:24 Error: [MissingControllerException] Controller class TwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'TwitterController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:22:30 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:22:30 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:22:35 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:22:35 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:23:06 Error: [MissingControllerException] Controller class AuthoriseTwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'AuthoriseTwitterController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:23:23 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/twitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:23:52 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/twitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:24:01 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:24:01 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:24:09 Error: [MissingControllerException] Controller class TwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'TwitterController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:24:21 Error: [MissingControllerException] Controller class TwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'TwitterController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:24:26 Error: [MissingControllerException] Controller class AuthoriseTwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'AuthoriseTwitterController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:25:19 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/twitter/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:26:01 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:26:01 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:27:30 Error: [MissingActionException] Action TwittersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'TwittersController',
+  'action' => 'index',
+)
+Request URL: /cakephpTwitter/twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#2 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-07-23 14:27:56 Error: [MissingActionException] Action TwittersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'TwittersController',
+  'action' => 'index',
+)
+Request URL: /cakephpTwitter/twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#2 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-07-23 14:28:33 Error: [MissingControllerException] Controller class TwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'TwitterController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:29:15 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:29:21 Error: [MissingControllerException] Controller class AuthoriseTwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'AuthoriseTwitterController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:29:31 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:29:31 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:29:54 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:29:54 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:30:03 Error: [MissingActionException] Action TwittersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'TwittersController',
+  'action' => 'index',
+)
+Request URL: /cakephpTwitter/Twitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#2 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-07-23 14:30:24 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:30:59 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:34:49 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:34:51 Error: [MissingControllerException] Controller class AuthoriseTwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'AuthoriseTwitterController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:35:07 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:35:08 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter('authorise_twitt...')
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:35:16 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:35:16 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter('authorise_twitt...')
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:35:27 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitter//authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:35:37 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 14:35:37 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/Twitters/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter('authorise_twitt...')
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 14:35:50 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitters/Twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:35:55 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:36:09 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/Twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:36:16 Error: [MissingControllerException] Controller class TwittersController could not be found.
+Exception Attributes: array (
+  'class' => 'TwittersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephpTwitter/twitters/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 14:36:20 Error: [MissingControllerException] Controller class AuthoriseTwitterController could not be found.
+Exception Attributes: array (
+  'class' => 'AuthoriseTwitterController',
+  'plugin' => 'Twitter',
+)
+Request URL: /cakephpTwitter/twitter/authorise_twitter
+Stack Trace:
+#0 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-23 19:33:30 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 19:33:30 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 19:36:09 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 19:36:09 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 19:37:38 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 19:37:38 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter/
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-23 19:43:26 Error: Please remove all data from twitter_settings before trying to re-authorise
+2016-07-23 19:43:26 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephpTwitter/Twitter/authorise_twitter/
+Stack Trace:
+#0 [internal function]: TwittersController->authorise_twitter()
+#1 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Controller\Controller.php(491): ReflectionMethod->invokeArgs(Object(TwittersController), Array)
+#2 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\Apache24\htdocs\cakephpTwitter\app\Vendor\cakephp\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TwittersController), Object(CakeRequest))
+#4 C:\Apache24\htdocs\cakephpTwitter\app\webroot\index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
